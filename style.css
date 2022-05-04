@@ -1,0 +1,46 @@
+* {
+    background: linear-gradient(90deg, rgb(248, 120, 237), orange);
+    font-size: 5vmin;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    font-family: fantasy;
+}
+
+body {
+    margin: auto;
+    margin-top: 5vmax;
+    border: 5px solid black;
+    width: 30%;
+}
+
+.screen {
+    text-align: right;
+    margin: auto;
+    margin-top: 2vmax;
+    border: 5px solid black;
+    background: gray;
+    width: 20vmax;
+}
+
+#screen {
+    background: inherit;
+    margin-right: 1vmin;
+}
+
+button { 
+    display: inline-block;
+    width: 5vmax;
+    height: 5vmax;
+    white-space: normal;
+    margin-top: 1vmax;
+    background: linear-gradient(-90deg, rgb(248, 120, 237), orange);
+  }
+
+.buttons {
+    margin-bottom: 2vmax;
+}
+
+#equals {
+    width: 10.5vmax
+}
