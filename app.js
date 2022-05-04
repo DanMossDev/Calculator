@@ -22,16 +22,20 @@ for (let i = 0; i < buttonArray.length; i++) {
 }
 
 function buttonPress(button) {
-    if (!isNaN(parseInt(button))) {
-        input[numberInputs] = parseInt(button);
-        numberInputs ++;
+    if (button === 'AC') {
+        input = [];
+        numberInputs = 0;
+        result = 0;
+    }
+    else if (button === '=') {
+        result = eval(input.join(''));
+        input = [result];
     }
     else {
-        switch(button) {
-            case 'AC':
-                input = [];
-                input.filter(function (el) { return el !== NaN});
-        }
+        input[numberInputs] = button;
+        numberInputs++;
     }
-    console.log(input);
+    screen_span.textContent = input.join('');
+    console.log('Input array: ' + input);
+    console.log('Result: ' + result)
 }
