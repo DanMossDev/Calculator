@@ -22,7 +22,7 @@
 }
 
 a[href^=tel] { 
-    color: inherit; 
+    color: black; 
     text-decoration: none; 
 }
 
@@ -76,6 +76,7 @@ button {
 
 .button {
     color: black;
+    
 }
 
 button:hover {
