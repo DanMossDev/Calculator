@@ -1,0 +1,9 @@
+# Simple Calculator
+
+A pretty simple calculator app - however, perhaps noteworthy as being the first project I've completed solo! I have previously made a simple rock paper scissors game, but that was almost entirely following a tutorial.
+
+The app is pretty simple, essentially it just stores the button pressed in an array, displays a .join()ed version of them, and then when the user presses the equals button it evaluates the joined array and prints the result. Nice and simple!
+
+In the future I might add scientific functionality, update the visuals a bit, and maybe try and refactor the HTML as it's currently a little wild.
+
+The CSS is fine as far as responsivity goes, if perhaps a little hamfisted.
