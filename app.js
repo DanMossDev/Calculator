@@ -35,7 +35,5 @@ function buttonPress(button) {
         input[numberInputs] = button;
         numberInputs++;
     }
-    screen_span.textContent = input.join('');
-    console.log('Input array: ' + input);
-    console.log('Result: ' + result)
+    screen_span.textContent = input.join('').substring(0,13);
 }

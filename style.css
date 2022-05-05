@@ -1,5 +1,15 @@
+@font-face {
+    font-family: "DS-Digital";
+    src: url("./fonts/DS-DIGI.TTF");
+}
+
+:root {
+    --calculator: rgb(27, 24, 24);
+    --numbuttons: rgb(255, 165, 0)
+}
+
 * {
-    background: linear-gradient(90deg, rgb(248, 120, 237), orange);
+    background: linear-gradient(90deg, rgba(248, 120, 237, 0.5), rgba(255, 165, 0, 0.5));
     font-size: 5vmin;
     text-align: center;
     margin: 0;
@@ -11,7 +21,21 @@ body {
     margin: auto;
     margin-top: 5vmax;
     border: 5px solid black;
+    border-radius: 2vmax;
     width: 30%;
+    background:var(--calculator)
+}
+
+.column {
+    background:var(--calculator)
+}
+
+.row {
+    background:var(--calculator)
+}
+
+.screenparent {
+    background:var(--calculator)
 }
 
 .screen {
@@ -19,13 +43,17 @@ body {
     margin: auto;
     margin-top: 2vmax;
     border: 5px solid black;
-    background: gray;
-    width: 20vmax;
+    background: lightgray;
+    width: 65%;
+    height: auto;
+    padding: 3%;
 }
 
 #screen {
     background: inherit;
     margin-right: 1vmin;
+    font-family: DS-Digital;
+    font-size: 3vw;
 }
 
 button { 
@@ -34,13 +62,87 @@ button {
     height: 5vmax;
     white-space: normal;
     margin-top: 1vmax;
-    background: linear-gradient(-90deg, rgb(248, 120, 237), orange);
-  }
+    background: lightslategray;
+}
+
+button:hover {
+    background: rgba(119, 136, 153, 0.5);
+}
 
 .buttons {
     margin-bottom: 2vmax;
 }
 
+.operand {
+    background: var(--numbuttons);
+    transition-duration: 0.05s;
+}
+
+.operand:hover {
+    background: rgba(255, 165, 0, 0.5)
+}
+
+#ac, #leftbrac, #rightbrac, #equals {
+    background: rgba(248, 120, 237, 0.7);
+    transition-duration: 0.05s;
+}
+
+#ac:hover, #leftbrac:hover, #rightbrac:hover, #equals:hover {
+    background: rgba(248, 120, 237, 0.4);
+}
+
 #equals {
     width: 10.5vmax
+}
+
+@media screen and (max-width: 1000px) {
+    body {
+        width: 50%
+    }
+    .screen {
+        width: 32vw;
+    }
+
+    #screen {
+        font-size: 5vmin;
+    }
+    button { 
+        width: 8vmax;
+        height: 8vmax;
+    }
+    #equals {
+        width: 16.5vmax;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    body {
+        width: 90%
+    }
+    .screen {
+        width: 80%
+    }
+
+    #screen {
+        font-size: 10vmin;
+    }
+    button { 
+        width: 18vmin;
+        height: 18vmin;
+    }
+    #equals {
+        width: 36.5vmin;
+    }
+}
+
+@media screen and (min-height: 1100px) {
+    body {
+        width: 70%
+    }
+    .screen {
+        width: 65%
+    }
+    #screen {
+        font-size: 7vmin;
+    }
 }
