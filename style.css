@@ -72,6 +72,7 @@ button {
     white-space: normal;
     margin-top: 1vmax;
     background: lightslategray;
+    color: black;
 }
 
 button:hover {
