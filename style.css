@@ -72,6 +72,9 @@ button {
     white-space: normal;
     margin-top: 1vmax;
     background: lightslategray;
+}
+
+.button {
     color: black;
 }
 
