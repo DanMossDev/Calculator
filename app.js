@@ -31,6 +31,14 @@ function buttonPress(button) {
         result = eval(input.join(''));
         input = [result];
     }
+    else if (button === '÷') {
+        input[numberInputs] = '/';
+        numberInputs++;
+    }
+    else if (button === '×') {
+        input[numberInputs] = '*';
+        numberInputs++;
+    }
     else {
         input[numberInputs] = button;
         numberInputs++;
